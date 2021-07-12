@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "TT Norms";
+    font-size: 18px;
+    color: black;
+}
+
+header {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+
+    nav {
+        height: 100px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #333333;
+        padding: 0 22px;
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+}
