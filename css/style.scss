@@ -29,4 +29,26 @@ header {
     .dropdown-toggle::after {
         display: none;
     }
+
+    .menu-right {
+        align-items: center;
+
+        .menu-contact {
+            margin-right: 35px;
+        }
+
+        .menu-user {
+            button {
+                margin-left: 30px;
+            }
+
+            a {
+                margin-left: 30px;
+            }
+
+        }
+
+
+    }
+
 }
