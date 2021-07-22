@@ -16,7 +16,8 @@ body {
 header {
   background: #ffffff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
-
+  position: relative;
+  z-index: 9;
   .navbar-brand {
     margin-right: 38px;
   }
@@ -118,7 +119,7 @@ header {
 .home-banner {
   padding-top: 60px;
   padding-bottom: 25px;
-  z-index: -1;
+  z-index: 0;
   position: relative;
 
   .swiper-pagination-bullet {
@@ -159,7 +160,7 @@ header {
       font-size: 19.88px;
       line-height: 24px;
       color: #828282;
-      padding-top: 9px;
+      padding-top: 4.5px;
     }
 
     a {
@@ -175,7 +176,7 @@ header {
       text-decoration: none;
       text-align: center;
       line-height: 53px;
-      margin-top: 34px;
+      margin-top: 32px;
     }
   }
 }
@@ -242,8 +243,10 @@ header {
 }
 
 .home-products {
-  .row {
-    flex-direction: column;
+  padding-top: 24px;
+  padding-bottom: 68px;
+  .all-products {
+    margin-bottom: 35px;
   }
 
   .products-wrapper {
@@ -272,7 +275,8 @@ header {
     }
 
     .title {
-      margin: 9px 0;
+      margin: 9px 0 5px;
+      display: block;
       font-weight: 500;
       font-size: 14.4845px;
       line-height: 22px;
@@ -283,7 +287,7 @@ header {
       font-size: 12.674px;
       line-height: 19px;
       color: #000000;
-      margin-bottom: 13px;
+      margin-bottom: 5px;
     }
 
     .rating {
@@ -304,12 +308,61 @@ header {
         font-size: 18.1056px;
         line-height: 23px;
         color: #000000;
-        margin-right: 18px;
+        margin-right: 15px;
       }
       span {
         font-size: 12.674px;
         line-height: 23px;
         color: #828282;
+      }
+    }
+
+    a.to-cart {
+      width: 140px;
+      height: 38px;
+      background: #00ac4e;
+      border-radius: 4.52641px;
+      font-weight: 500;
+      font-size: 18.1056px;
+      line-height: 38px;
+      color: #ffffff;
+      text-align: center;
+      display: inline-block;
+      margin-top: 13.6px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .pagination-block {
+    display: flex;
+    justify-content: center;
+    li {
+      a {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+        width: 41px;
+        height: 41px;
+        text-align: center;
+        background-color: none;
+        border: none;
+      }
+
+      &.active {
+        a {
+          background: #00ac4e;
+          border-radius: 5px;
+          color: white;
+          border-color: #00ac4e;
+          margin: 0 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
     }
   }
