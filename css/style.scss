@@ -160,13 +160,12 @@ header {
       font-size: 19.88px;
       line-height: 24px;
       color: #828282;
-      padding-top: 4.5px;
+      padding-top: 0.5px;
     }
 
     a {
       font-weight: 500;
       font-size: 25.3px;
-      line-height: 30px;
       color: #ffffff;
       width: 218px;
       height: 53px;
@@ -244,7 +243,7 @@ header {
 
 .home-products {
   padding-top: 24px;
-  padding-bottom: 68px;
+  padding-bottom: 44px;
   .all-products {
     margin-bottom: 35px;
   }
@@ -328,7 +327,7 @@ header {
       color: #ffffff;
       text-align: center;
       display: inline-block;
-      margin-top: 13.6px;
+      margin-top: 10px;
 
       &:hover {
         text-decoration: none;
@@ -339,6 +338,7 @@ header {
   .pagination-block {
     display: flex;
     justify-content: center;
+    margin-top: -7px;
     li {
       a {
         font-weight: 500;
@@ -362,6 +362,170 @@ header {
           display: flex;
           justify-content: center;
           align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.home-video {
+  .video1440 {
+    width: 1440px;
+    margin: 0 auto;
+    background-image: url(../img/video-bg.jpg);
+    background-size: cover;
+  }
+
+  .embed-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 648px;
+  }
+
+  .play_yt {
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+.delivery {
+  padding: 60px 0;
+  .block {
+    height: 254px;
+    width: 100%;
+    background: #f2f2f2;
+    box-shadow: 0px 0px 18.0727px rgba(0, 0, 0, 0.03);
+    border-radius: 18.0727px;
+    padding: 30px 0 30px 40px;
+    background-image: url(../img/bus.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    .title {
+      font-size: 31.6273px;
+      line-height: 38px;
+      color: #333333;
+      padding-bottom: 25px;
+      margin-top: 2px;
+    }
+    a {
+      font-weight: 500;
+      font-size: 25.3px;
+      color: #ffffff;
+      width: 170px;
+      height: 53px;
+      background: #00ac4e;
+      border-radius: 5px;
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      line-height: 53px;
+      margin: 6px;
+    }
+  }
+}
+
+footer {
+  background: #00ac4e;
+  padding: 34px 0;
+  color: #ffffff;
+
+  a {
+    color: #ffffff;
+    &:hover {
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 9px;
+    font-family: TT Hoves;
+    font-size: 12.3407px;
+    line-height: 32px;
+    a {
+      margin-left: 33px;
+    }
+  }
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .footer-left {
+      .phones {
+        display: flex;
+        justify-content: space-between;
+
+        .phone-item {
+          display: flex;
+          flex-direction: column;
+          margin-right: 60px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          span {
+            font-size: 12.3407px;
+            line-height: 32px;
+          }
+
+          a {
+            font-weight: 500;
+            font-size: 18.511px;
+            line-height: 39px;
+          }
+        }
+      }
+
+      .work-time {
+        font-size: 15.4259px;
+        line-height: 32px;
+        margin: 10px 0;
+      }
+
+      .work-email {
+        font-size: 18.511px;
+        line-height: 32px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .site-help {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration-line: underline;
+        margin-top: 15px;
+      }
+    }
+    .footer-center {
+      .social {
+        font-weight: 500;
+        font-size: 15.4259px;
+        line-height: 32px;
+        letter-spacing: 3.08517px;
+        font-variant: small-caps;
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        a {
+          margin-bottom: 26px;
+        }
+      }
+    }
+    .footer-right {
+      .person {
+        a {
+          display: flex;
+          justify-content: center;
+          font-weight: 500;
+          font-size: 15.4259px;
+          line-height: 32px;
+          img {
+            margin-right: 7px;
+          }
         }
       }
     }
