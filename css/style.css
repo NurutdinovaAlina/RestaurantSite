@@ -231,6 +231,8 @@ header .menu-right .menu-user a {
 .home-menu .container .swiper-container-menu {
   position: relative;
   overflow: hidden;
+  left: -16px;
+  width: calc(100% + 16px);
 }
 
 .home-menu .container .swiper-container-menu a {
@@ -239,11 +241,13 @@ header .menu-right .menu-user a {
   line-height: 27px;
   color: #4f4f4f;
   width: auto !important;
+  padding: 8px 16px;
 }
 
-.home-menu .container .swiper-container-menu a:hover {
-  color: #00ac4e;
-  text-decoration: none;
+.home-menu .container .swiper-container-menu a.active {
+  color: #ffffff;
+  background: #00ac4e;
+  border-radius: 5px;
 }
 
 .home-products {
@@ -580,5 +584,75 @@ footer .footer-wrapper .footer-right .person a {
 
 footer .footer-wrapper .footer-right .person a img {
   margin-right: 7px;
+}
+
+.green-btn {
+  background: #00ac4e;
+  border-radius: 7px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14px 38px;
+}
+
+.green-btn:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.default-btn {
+  font-size: 22.2162px;
+  line-height: 29px;
+  padding-left: 60px;
+  color: #00ac4e;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.default-btn:hover {
+  text-decoration: none;
+  color: #00ac4e;
+}
+
+.default-btn img {
+  position: relative;
+  top: 2px;
+  margin-left: 9px;
+}
+
+.delivery-info {
+  padding: 45px 0 60px;
+}
+
+.delivery-info h1 {
+  padding-bottom: 19px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.delivery-info p {
+  font-size: 22px;
+  line-height: 26px;
+  color: #828282;
 }
 /*# sourceMappingURL=style.css.map */
