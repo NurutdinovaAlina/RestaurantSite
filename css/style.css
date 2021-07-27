@@ -4,6 +4,14 @@
 }
 
 body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "TT Norms";
   font-size: 18px;
   color: black;
@@ -11,6 +19,12 @@ body {
 
 *:focus {
   outline: -webkit-focus-ring-color auto 0px;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 header {
@@ -35,11 +49,11 @@ header nav .nav-item.dropdown a {
   z-index: 1;
 }
 
-.navbar-light .navbar-nav .nav-item.active .nav-link {
+header .navbar-light .navbar-nav .nav-item.active .nav-link {
   color: #00ac4e;
 }
 
-.navbar-light .navbar-nav .nav-link {
+header .navbar-light .navbar-nav .nav-link {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -48,11 +62,11 @@ header nav .nav-item.dropdown a {
   padding: 0 22px;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+header .navbar-light .navbar-nav .nav-link:hover {
   color: #00ac4e;
 }
 
-.dropdown-menu {
+header .dropdown-menu {
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
@@ -65,34 +79,34 @@ header nav .nav-item.dropdown a {
   z-index: 0;
 }
 
-.dropdown-menu .dropdown-item {
+header .dropdown-menu .dropdown-item {
   font-size: 12px;
   line-height: 13px;
   color: #333333;
 }
 
-.dropdown-menu span {
+header .dropdown-menu span {
   margin-right: 8px;
   width: 20px;
   display: inline-block;
   text-align: center;
 }
 
-.dropdown-toggle::after {
+header .dropdown-toggle::after {
   display: none;
 }
 
-.menu-right {
+header .menu-right {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.menu-right .menu-contact {
+header .menu-right .menu-contact {
   margin-right: 35px;
 }
 
-.menu-right .menu-contact a {
+header .menu-right .menu-contact a {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -100,22 +114,22 @@ header nav .nav-item.dropdown a {
   text-decoration: none;
 }
 
-.menu-right .menu-contact a:hover {
+header .menu-right .menu-contact a:hover {
   color: #00ac4e;
 }
 
-.menu-right .menu-contact img {
+header .menu-right .menu-contact img {
   margin-right: 5px;
 }
 
-.menu-right .menu-user button {
+header .menu-right .menu-user button {
   margin-left: 30px;
   background: none;
   padding: 0;
   border: none;
 }
 
-.menu-right .menu-user a {
+header .menu-right .menu-user a {
   margin-left: 30px;
 }
 
@@ -458,6 +472,8 @@ header nav .nav-item.dropdown a {
 }
 
 footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   background: #00ac4e;
   padding: 34px 0;
   color: #ffffff;
@@ -658,5 +674,70 @@ footer .footer-wrapper .footer-right .person a img {
   font-size: 22px;
   line-height: 26px;
   color: #828282;
+}
+
+.form-support {
+  width: 672px;
+}
+
+.form-support ::-webkit-input-placeholder {
+  color: #bdbdbd;
+  font-family: "TT Hoves";
+  font-size: 20px;
+  line-height: 21px;
+}
+
+.form-support :-ms-input-placeholder {
+  color: #bdbdbd;
+  font-family: "TT Hoves";
+  font-size: 20px;
+  line-height: 21px;
+}
+
+.form-support ::-ms-input-placeholder {
+  color: #bdbdbd;
+  font-family: "TT Hoves";
+  font-size: 20px;
+  line-height: 21px;
+}
+
+.form-support ::placeholder {
+  color: #bdbdbd;
+  font-family: "TT Hoves";
+  font-size: 20px;
+  line-height: 21px;
+}
+
+.form-support textarea {
+  background: #f9f9f9;
+  border-radius: 5px;
+  height: 174px;
+  width: 100%;
+  padding: 20px;
+  border: none;
+}
+
+.form-support button {
+  width: 189.23px;
+  height: 60px;
+  background: #00ac4e;
+  border-radius: 7.8169px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18.7606px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 39px;
 }
 /*# sourceMappingURL=style.css.map */
