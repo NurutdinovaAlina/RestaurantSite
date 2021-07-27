@@ -35,7 +35,11 @@ header nav .nav-item.dropdown a {
   z-index: 1;
 }
 
-header .navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+  color: #00ac4e;
+}
+
+.navbar-light .navbar-nav .nav-link {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -44,11 +48,11 @@ header .navbar-light .navbar-nav .nav-link {
   padding: 0 22px;
 }
 
-header .navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:hover {
   color: #00ac4e;
 }
 
-header .dropdown-menu {
+.dropdown-menu {
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
@@ -61,34 +65,34 @@ header .dropdown-menu {
   z-index: 0;
 }
 
-header .dropdown-menu .dropdown-item {
+.dropdown-menu .dropdown-item {
   font-size: 12px;
   line-height: 13px;
   color: #333333;
 }
 
-header .dropdown-menu span {
+.dropdown-menu span {
   margin-right: 8px;
   width: 20px;
   display: inline-block;
   text-align: center;
 }
 
-header .dropdown-toggle::after {
+.dropdown-toggle::after {
   display: none;
 }
 
-header .menu-right {
+.menu-right {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-header .menu-right .menu-contact {
+.menu-right .menu-contact {
   margin-right: 35px;
 }
 
-header .menu-right .menu-contact a {
+.menu-right .menu-contact a {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -96,22 +100,22 @@ header .menu-right .menu-contact a {
   text-decoration: none;
 }
 
-header .menu-right .menu-contact a:hover {
+.menu-right .menu-contact a:hover {
   color: #00ac4e;
 }
 
-header .menu-right .menu-contact img {
+.menu-right .menu-contact img {
   margin-right: 5px;
 }
 
-header .menu-right .menu-user button {
+.menu-right .menu-user button {
   margin-left: 30px;
   background: none;
   padding: 0;
   border: none;
 }
 
-header .menu-right .menu-user a {
+.menu-right .menu-user a {
   margin-left: 30px;
 }
 
