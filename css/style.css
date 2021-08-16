@@ -13,6 +13,145 @@ body {
   outline: -webkit-focus-ring-color auto 0px;
 }
 
+.modal-dialog {
+  width: 358px;
+  height: 420px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 17.7465px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0px 17.7465px rgba(0, 0, 0, 0.12);
+  border-radius: 17.4636px;
+}
+
+.modal-dialog .modal-content {
+  border: none;
+  padding: 30px 42px 34px;
+  position: relative;
+}
+
+.modal-dialog .modal-content .close {
+  color: #00ac4e;
+  position: absolute;
+  font-size: 1.9rem;
+  font-weight: normal;
+  right: 24px;
+  top: 13px;
+}
+
+.modal-dialog .modal-content .top-modal {
+  text-align: center;
+  margin-bottom: 28px;
+  margin-top: -19px;
+}
+
+.modal-dialog .modal-content .top-modal .modal-name {
+  font-weight: 500;
+  font-size: 17.4636px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 13px;
+}
+
+.modal-dialog .modal-content form .inpb input {
+  width: 100%;
+  height: 50.64px;
+  background: #fcfcfc;
+  border: 0.873181px solid #ebebeb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5.91549px;
+  padding: 0 20px 0 49px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: #c6c6c6;
+  margin: 14px 0;
+  background-repeat: no-repeat;
+  background-position: 18px center;
+}
+
+.modal-dialog .modal-content form .inpb input.phone {
+  background-image: url(../img/modal-phone.svg);
+}
+
+.modal-dialog .modal-content form .inpb input.pass {
+  background-image: url(../img/modal-pass.svg);
+}
+
+.modal-dialog .modal-content form .inpb input::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: #c6c6c6;
+}
+
+.modal-dialog .modal-content form .inpb input:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: #c6c6c6;
+}
+
+.modal-dialog .modal-content form .inpb input::-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: #c6c6c6;
+}
+
+.modal-dialog .modal-content form .inpb input::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: #c6c6c6;
+}
+
+.modal-dialog .modal-content form .forgot-pass {
+  font-weight: normal;
+  font-size: 14.1972px;
+  line-height: 17px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #00ac4e;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal-dialog .modal-content form button {
+  border: none;
+  min-width: 143px;
+  height: 45.41px;
+  background: #00ac4e;
+  border-radius: 5.91549px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 500;
+  font-size: 14.1972px;
+  line-height: 45px;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  margin: 12px auto;
+}
+
+.modal-dialog .modal-content .modal-txt {
+  font-weight: normal;
+  font-size: 12.2245px;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.modal-dialog .modal-content .modal-txt span {
+  color: #00ac4e;
+  cursor: pointer;
+}
+
 header {
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);

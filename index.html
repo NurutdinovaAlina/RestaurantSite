@@ -106,7 +106,11 @@
                 </a>
               </div>
               <div class="menu-user">
-                <button class="profile">
+                <button
+                  class="profile"
+                  data-toggle="modal"
+                  data-target="#login"
+                >
                   <img src="img/person.svg" alt="person" />
                 </button>
                 <a href="cart.html" class="cart">
@@ -671,3 +675,44 @@
     </script>
   </body>
 </html>
+
+<div
+  class="modal fade"
+  id="login"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <div class="top-modal">
+          <img src="img/login.svg" alt="" />
+          <div class="modal-name">Войти в личный кабинет</div>
+        </div>
+        <form action="" method="POST">
+          <div class="inpb">
+            <input class="phone" name="" type="text" placeholder="Телефон" />
+          </div>
+          <div class="inpb">
+            <input class="pass" name="" type="text" placeholder="Пароль" />
+          </div>
+          <div class="forgot-pass">Забыли пароль?</div>
+          <button>Войти</button>
+        </form>
+        <div class="modal-txt">
+          Впервые у нас? <span>Зарегистрироваться</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
