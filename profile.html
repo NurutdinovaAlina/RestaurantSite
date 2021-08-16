@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <title>Пиросмани</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/logo.svg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Меню
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"
+                    ><span><img src="img/ico1.svg" /></span>Супы</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><span><img src="img/ico2.svg" /></span>Хачапури</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><span><img src="img/ico3.svg" /></span>Холодные закуски</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><span><img src="img/ico4.svg" /></span>Хинкали</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><span><img src="img/ico5.svg" /></span>Шашлык</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><span><img src="img/ico6.svg" /></span>Соусы</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><span><img src="img/ico7.svg" /></span>Салаты</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><span><img src="img/ico8.svg" /></span>Горячие блюда</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><span><img src="img/ico9.svg" /></span>Гарнир</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><span><img src="img/ico10.svg" /></span>Десерты</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><span><img src="img/ico11.svg" /></span>Напитки</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="delivery.html">Доставка </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="order.html">Оплата</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="booking.html">Бронь стола</a>
+              </li>
+            </ul>
+            <div class="menu-right d-flex">
+              <div class="menu-contact">
+                <a href="tel:+7 (831) 282-60-00">
+                  <img src="img/phone.svg" alt="phone" />
+                  <span>+7 (831) 282-60-00</span>
+                </a>
+              </div>
+              <div class="menu-user">
+                <button class="profile">
+                  <img src="img/person.svg" alt="person" />
+                </button>
+                <a href="cart.html" class="cart">
+                  <img src="img/shopping-cart.svg" alt="shopping-cart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="cart-product cart-product-order profile">
+      <div class="container">
+        <div class="line-block-buttons">
+          <button class="active">Персональные данные</button>
+          <button class="">История заказов</button>
+        </div>
+        <div class="line-tab line-tab-1 active">
+          <form action="">
+            <div class="cart-wrapper">
+              <div class="cart-info">
+                <h3>Персональная информация</h3>
+                <div class="photo-input">
+                  <div class="photo"></div>
+                  <input type="file" name="" id="file" />
+                  <label for="file">Загрузить фотографию</label>
+                </div>
+                <div class="form-line">
+                  <div class="group-block">
+                    <div class="group-line g-name">
+                      <div class="label">Ваше имя</div>
+                      <input type="text" placeholder="Имя" />
+                    </div>
+                    <div class="group-line g-surname">
+                      <div class="label">Ваша фамилия</div>
+                      <input type="text" placeholder="Фамилия" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-line g-patronymic">
+                  <div class="label">Ваше отчество</div>
+                  <input type="text" placeholder="Отчество" />
+                </div>
+                <div class="form-line">
+                  <div class="label">Адрес электронной почты</div>
+                  <input type="text" placeholder="Email" />
+                </div>
+              </div>
+              <div class="cart-sidebar">
+                <h3>
+                  Контактная информация <span>(подтверждение заказов)</span>
+                </h3>
+                <div class="form-line">
+                  <div class="group-block">
+                    <div class="group-line">
+                      <div class="label">Основной телефон</div>
+                      <input type="text" placeholder="+380" />
+                    </div>
+                    <div class="group-line">
+                      <div class="label">Дополнительный</div>
+                      <input type="text" placeholder="+380" />
+                    </div>
+                  </div>
+                </div>
+                <h3>Изменение пароля</h3>
+                <div class="form-line">
+                  <div class="label">Ваш старый пароль</div>
+                  <input type="text" placeholder="Старый пароль" />
+                </div>
+                <div class="form-line">
+                  <div class="label">Ваш новый пароль</div>
+                  <input type="text" placeholder="Новый пароль" />
+                </div>
+                <div class="form-line">
+                  <div class="label">Подтверждение</div>
+                  <input type="text" placeholder="Подтвердите пароль" />
+                </div>
+                <button>Сохранить изменения</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="line-tab line-tab-2"></div>
+        <div class="block-order">
+          <div class="order-info">
+            <div class="line">
+              <b>Номер заказа:</b> <span class="green">Заказ №2334678954</span>
+            </div>
+            <div class="line">
+              <b>Способ оплаты:</b> <span>Банковская карта</span>
+            </div>
+            <div class="line"><b>Дата заказа:</b> <span>19.05.2020</span></div>
+            <div class="line">
+              <b>Дата доставки:</b> <span>23.05.2020</span>
+            </div>
+            <div class="line">
+              <b>Статус заказа:</b> <span class="green">Доставлен</span>
+            </div>
+          </div>
+          <div class="order-items">
+            <div class="cart-product-item">
+              <div class="cart-product-left d-flex">
+                <div class="cart-product-img"></div>
+                <div class="cart-product-name">Хачапури</div>
+              </div>
+              <div class="cart-product-right d-flex">
+                <div class="quantity">2шт</div>
+                <div class="cart-product-price">350 ₽</div>
+              </div>
+            </div>
+            <div class="order-repeat">
+              <span>Повторить заказ <img src="img/repeat.svg" alt="" /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-left">
+            <div class="phones">
+              <div class="phone-item">
+                <span>Бесплатный звонок по РФ</span>
+                <a href="tel:+78312826000">+7 (831) 282-60-00</a>
+              </div>
+              <div class="phone-item">
+                <span>Для приема заказов</span>
+                <a href="tel:+79040664685">+7 (904) 066-46-85</a>
+              </div>
+            </div>
+            <div class="work-time">График работы по будням с 9:00 до 18:00</div>
+            <a href="mailto:info@.ru" class="work-email">Email: info@.ru</a>
+            <a href="" class="site-help">Поддержка</a>
+          </div>
+          <div class="footer-center">
+            <div class="social">
+              <a href="">Мы в вконтакте ></a>
+              <a href="">Мы в instagram ></a>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="person">
+              <img src="img/person-white.svg" alt="" />
+              <span>Войти / Регистрация</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>©2021. Пиросмани</span>
+          <a href="">Условия и соглашения</a>
+          <a href="">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  </body>
+</html>
