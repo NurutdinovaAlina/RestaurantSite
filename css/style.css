@@ -1244,22 +1244,54 @@ footer .footer-wrapper .footer-right .person a img {
   padding: 60px 0;
 }
 
+.cart-product .line-block-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 60px;
+}
+
 .cart-product .line-block-buttons button {
   border: none;
   width: 138.73px;
   height: 109px;
-  background: #ffffff;
+  background: transparent;
   border-radius: 15.8545px;
   font-weight: 500;
   font-size: 14.2907px;
   line-height: 21px;
-  text-align: center;
   color: #00ac4e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 90px;
+  cursor: pointer;
+}
+
+.cart-product .line-block-buttons button svg path {
+  fill: #00ac4e;
 }
 
 .cart-product .line-block-buttons button.active {
   background: #00ac4e;
   color: #ffffff;
+}
+
+.cart-product .line-block-buttons button.active svg path {
+  fill: #ffffff;
 }
 
 .cart-product.profile h3 {
@@ -1268,6 +1300,117 @@ footer .footer-wrapper .footer-right .person a img {
 
 .cart-product.profile h3 span {
   font-size: 20px;
+}
+
+.cart-product.profile .line-tab {
+  display: none;
+}
+
+.cart-product.profile .line-tab.active {
+  display: block;
+}
+
+.cart-product.profile .block-order {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 16.2899px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 16.2899px rgba(0, 0, 0, 0.07);
+  border-radius: 13.0319px;
+  padding: 25px 30px 25px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.cart-product.profile .block-order .order-info .line {
+  margin-bottom: 16px;
+}
+
+.cart-product.profile .block-order > div {
+  width: 50%;
+}
+
+.cart-product.profile .block-order > div .line {
+  font-weight: normal;
+  font-size: 19.4096px;
+  line-height: 29px;
+}
+
+.cart-product.profile .block-order > div .line .green {
+  color: #00ac4e;
+}
+
+.cart-product.profile .block-order > div .line .red {
+  color: #eb5757;
+}
+
+.cart-product.profile .block-order > div .cart-product-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 15px 15px 35px;
+  border-top: 1px solid #ebebeb;
+}
+
+.cart-product.profile .block-order > div .cart-product-item .d-flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-product.profile .block-order > div .cart-product-item .cart-product-img {
+  width: 78.92px;
+  height: 58.3px;
+  background: #00ac4e;
+  border-radius: 3.55497px;
+  margin-right: 25px;
+}
+
+.cart-product.profile .block-order > div .cart-product-item .cart-product-name {
+  font-weight: 500;
+  font-size: 16.1493px;
+  line-height: 15px;
+}
+
+.cart-product.profile .block-order > div .cart-product-item .cart-product-price {
+  font-weight: 500;
+  font-size: 20.1866px;
+  line-height: 17px;
+}
+
+.cart-product.profile .block-order > div .cart-product-item .quantity {
+  width: 113.78px;
+  height: 41.46px;
+  background: #fcfcfc;
+  border: 0.882021px solid #ebebeb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8.82021px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 41.46px;
+  margin-right: 45px;
+  text-align: center;
+}
+
+.cart-product.profile .block-order > div .order-repeat {
+  font-weight: 500;
+  font-size: 16.2899px;
+  line-height: 29px;
+  color: #00ac4e;
+  text-align: right;
+  border-top: 1px solid #ebebeb;
+  padding-top: 10px;
+}
+
+.cart-product.profile .block-order > div .order-repeat img {
+  margin-left: 5px;
 }
 
 .cart-product.profile .cart-wrapper {
