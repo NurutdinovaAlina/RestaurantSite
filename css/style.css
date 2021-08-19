@@ -14,7 +14,7 @@ body {
 }
 
 .modal-dialog {
-  width: 358px;
+  max-width: 384px;
   height: 420px;
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 17.7465px rgba(0, 0, 0, 0.12);
@@ -26,6 +26,10 @@ body {
   border: none;
   padding: 30px 42px 34px;
   position: relative;
+}
+
+.modal-dialog .modal-content .modal-body {
+  padding: 0;
 }
 
 .modal-dialog .modal-content .close {
@@ -64,7 +68,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-align: left;
-  color: #c6c6c6;
+  color: #828282;
   margin: 14px 0;
   background-repeat: no-repeat;
   background-position: 18px center;
@@ -83,7 +87,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-align: left;
-  color: #c6c6c6;
+  color: #828282;
 }
 
 .modal-dialog .modal-content form .inpb input:-ms-input-placeholder {
@@ -91,7 +95,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-align: left;
-  color: #c6c6c6;
+  color: #828282;
 }
 
 .modal-dialog .modal-content form .inpb input::-ms-input-placeholder {
@@ -99,7 +103,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-align: left;
-  color: #c6c6c6;
+  color: #828282;
 }
 
 .modal-dialog .modal-content form .inpb input::placeholder {
@@ -107,7 +111,62 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-align: left;
-  color: #c6c6c6;
+  color: #828282;
+}
+
+.modal-dialog .modal-content form .check-block {
+  margin-bottom: 38px;
+}
+
+.modal-dialog .modal-content form .check-block .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 11px;
+  text-align: center;
+  color: #828282;
+  margin-bottom: 15px;
+}
+
+.modal-dialog .modal-content form .check-block .line input {
+  position: relative;
+  display: none;
+}
+
+.modal-dialog .modal-content form .check-block .line input:checked ~ label::before {
+  width: 15px;
+  height: 15px;
+  background: #00ac4e;
+  border: 1.47664px solid #ebebeb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.modal-dialog .modal-content form .check-block .line label {
+  margin-left: 30px;
+  position: relative;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.modal-dialog .modal-content form .check-block .line label::before {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fcfcfc;
+  border: 1.47664px solid #ebebeb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -30px;
+}
+
+.modal-dialog .modal-content form .check-block .line label a {
+  color: #00ac4e;
 }
 
 .modal-dialog .modal-content form .forgot-pass {
@@ -150,6 +209,81 @@ body {
 .modal-dialog .modal-content .modal-txt span {
   color: #00ac4e;
   cursor: pointer;
+}
+
+.modal-dialog.modal-big {
+  max-width: 654px;
+  width: 654px;
+}
+
+.modal-dialog.modal-big .modal-content {
+  padding: 40px 56px 27px;
+}
+
+.modal-dialog.modal-big .modal-content .booking-top {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 18px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.modal-dialog.modal-big .modal-content form .inpb input {
+  padding-left: 17px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+}
+
+.modal-dialog.modal-big .modal-content form .inpb input.center::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.modal-dialog.modal-big .modal-content form .inpb input.center:-ms-input-placeholder {
+  text-align: center;
+}
+
+.modal-dialog.modal-big .modal-content form .inpb input.center::-ms-input-placeholder {
+  text-align: center;
+}
+
+.modal-dialog.modal-big .modal-content form .inpb input.center::placeholder {
+  text-align: center;
+}
+
+.modal-dialog.modal-big .modal-content form .inpb input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+
+.modal-dialog.modal-big .modal-content form .inpb input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+
+.modal-dialog.modal-big .modal-content form .inpb input::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+
+.modal-dialog.modal-big .modal-content form .inpb input::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+
+.modal-dialog.modal-big .modal-content form .inpb.d-flex input {
+  width: 253px;
+}
+
+.modal-dialog.modal-big .modal-content form button {
+  height: 52px;
+  line-height: 52px;
+  font-size: 17px;
 }
 
 header {
@@ -826,28 +960,28 @@ footer .footer-wrapper .footer-right .person a img {
 }
 
 .delivery-info .form-support ::-webkit-input-placeholder {
-  color: #bdbdbd;
+  color: #828282;
   font-family: "TT Hoves";
   font-size: 20px;
   line-height: 21px;
 }
 
 .delivery-info .form-support :-ms-input-placeholder {
-  color: #bdbdbd;
+  color: #828282;
   font-family: "TT Hoves";
   font-size: 20px;
   line-height: 21px;
 }
 
 .delivery-info .form-support ::-ms-input-placeholder {
-  color: #bdbdbd;
+  color: #828282;
   font-family: "TT Hoves";
   font-size: 20px;
   line-height: 21px;
 }
 
 .delivery-info .form-support ::placeholder {
-  color: #bdbdbd;
+  color: #828282;
   font-family: "TT Hoves";
   font-size: 20px;
   line-height: 21px;

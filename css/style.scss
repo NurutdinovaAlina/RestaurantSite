@@ -14,7 +14,7 @@ body {
 }
 
 .modal-dialog {
-  width: 358px;
+  max-width: 384px;
   height: 420px;
   background: #ffffff;
   box-shadow: 0px 0px 17.7465px rgba(0, 0, 0, 0.12);
@@ -24,6 +24,10 @@ body {
     border: none;
     padding: 30px 42px 34px;
     position: relative;
+
+    .modal-body {
+      padding: 0;
+    }
 
     .close {
       color: #00ac4e;
@@ -62,7 +66,7 @@ body {
           font-size: 14px;
           line-height: 18px;
           text-align: left;
-          color: #c6c6c6;
+          color: #828282;
           margin: 14px 0;
           background-repeat: no-repeat;
           background-position: 18px center;
@@ -81,7 +85,61 @@ body {
           font-size: 14px;
           line-height: 18px;
           text-align: left;
-          color: #c6c6c6;
+          color: #828282;
+        }
+      }
+
+      .check-block {
+        margin-bottom: 38px;
+        .line {
+          display: flex;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 11px;
+          text-align: center;
+          color: #828282;
+          margin-bottom: 15px;
+
+          input {
+            position: relative;
+            display: none;
+
+            &:checked {
+              ~ label {
+                &::before {
+                  width: 15px;
+                  height: 15px;
+                  background: #00ac4e;
+                  border: 1.47664px solid #ebebeb;
+                  box-sizing: border-box;
+                }
+              }
+            }
+          }
+
+          label {
+            margin-left: 30px;
+            position: relative;
+            text-align: left;
+            margin-bottom: 0;
+
+            &::before {
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              background: #fcfcfc;
+              border: 1.47664px solid #ebebeb;
+              box-sizing: border-box;
+              content: "";
+              position: absolute;
+              top: -2px;
+              left: -30px;
+            }
+
+            a {
+              color: #00ac4e;
+            }
+          }
         }
       }
 
@@ -123,6 +181,57 @@ body {
       span {
         color: #00ac4e;
         cursor: pointer;
+      }
+    }
+  }
+
+  &.modal-big {
+    max-width: 654px;
+    width: 654px;
+
+    .modal-content {
+      padding: 40px 56px 27px;
+
+      .booking-top {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 18px;
+        text-align: center;
+        margin-bottom: 3px;
+      }
+
+      form {
+        .inpb {
+          input {
+            padding-left: 17px;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #828282;
+
+            &.center::placeholder {
+              text-align: center;
+            }
+          }
+
+          input::placeholder {
+            font-size: 14px;
+            line-height: 17px;
+            color: #828282;
+          }
+
+          &.d-flex {
+            input {
+              width: 253px;
+            }
+          }
+        }
+
+        button {
+          height: 52px;
+          line-height: 52px;
+          font-size: 17px;
+        }
       }
     }
   }
@@ -745,7 +854,7 @@ footer {
     width: 672px;
 
     ::placeholder {
-      color: #bdbdbd;
+      color: #828282;
       font-family: "TT Hoves";
       font-size: 20px;
       line-height: 21px;

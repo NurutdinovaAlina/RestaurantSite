@@ -18,6 +18,8 @@
     <title>Пиросмани</title>
   </head>
 
+  <button data-toggle="modal" data-target="#registr">Регистрация</button>
+
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -95,7 +97,9 @@
                 <a class="nav-link" href="order.html">Оплата</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="booking.html">Бронь стола</a>
+                <a class="nav-link" data-toggle="modal" data-target="#booking">
+                  Бронь стола</a
+                >
               </li>
             </ul>
             <div class="menu-right d-flex">
@@ -675,6 +679,106 @@
     </script>
   </body>
 </html>
+
+<div
+  class="modal fade"
+  id="registr"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <div class="top-modal">
+          <img src="img/login.svg" alt="" />
+          <div class="modal-name">Регистрация</div>
+        </div>
+        <form action="" method="POST">
+          <div class="inpb">
+            <input class="phone" name="" type="text" placeholder="Телефон" />
+          </div>
+          <div class="inpb">
+            <input class="pass" name="" type="text" placeholder="Пароль" />
+          </div>
+          <div class="inpb">
+            <input
+              class="pass"
+              name=""
+              type="text"
+              placeholder="Подтвердите пароль"
+            />
+          </div>
+
+          <div class="check-block">
+            <div class="line">
+              <input type="checkbox" id="r-mail" />
+              <label for="r-mail"
+                >Хочу получать выгодные предложения от магазина</label
+              >
+            </div>
+            <div class="line">
+              <input type="checkbox" checked id="r-pol" />
+              <label for="r-pol"
+                >Принимаю условия <a href="">Пользовательского соглашения</a>,
+                <a href="">Политики конфиденциальности</a></label
+              >
+            </div>
+          </div>
+          <button>Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="booking"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-big" role="document">
+    <div class="modal-content">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <div class="booking-top">Бронирование стола</div>
+        <form action="" method="POST">
+          <div class="inpb">
+            <input class="name center" name="" type="text" placeholder="Имя" />
+          </div>
+          <div class="inpb d-flex justify-content-between">
+            <input name="" type="text" placeholder="+380" />
+            <input name="" type="text" placeholder="Количество человек" />
+          </div>
+          <div class="inpb d-flex justify-content-between">
+            <input name="" type="text" placeholder="Время: _ _ : _ _" />
+            <input name="" type="date" placeholder="Дата:  дд.мм.гг" />
+          </div>
+          <button>Забронировать</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div
   class="modal fade"
